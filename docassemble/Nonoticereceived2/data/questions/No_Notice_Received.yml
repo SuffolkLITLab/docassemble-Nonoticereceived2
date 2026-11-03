@@ -159,7 +159,9 @@ subquestion: |
   % if len(users.elements) > 1:  
   So far you have told us about ${comma_and_list(users.complete_elements())}.
   % endif  
-yesno: users.there_is_another 
+fields:
+  - no label: users.there_is_another
+    datatype: yesnoradio
 ---
 sets:
   - users[i].name.first
@@ -227,11 +229,13 @@ question: |
   % else:
   Is there any other **landlord** or plaintiff named in this matter?
   % endif
-yesno: other_parties.there_is_another  
+fields:
+  - no label: other_parties.there_is_another
+    datatype: yesnoradio
 ---
 sets:
   - other_parties[i].name.first
-id: names of opposing parties
+id: "names of opposing parties 2"
 question: |
   What is the name of your other landlord?
 subquestion:  |
