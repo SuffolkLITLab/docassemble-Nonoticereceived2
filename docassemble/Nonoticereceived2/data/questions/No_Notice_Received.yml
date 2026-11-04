@@ -100,10 +100,10 @@ code: |
   interview_order_No_Notice_Received = True
 ---
 comment: |
-id: Motion for Summary Judgement or Motion to Dimiss for Failure to Properly Terminate Tenancy
+id: Motion for Summary Judgement or Motion to Dismiss for Failure to Properly Terminate Tenancy
 continue button field: No_Notice_Received_intro
 question: |
-  Defendant's Motion for Summary Judgement or Motion to Dimiss for Failure to       Properly Terminate Tenancy
+  Defendant's Motion for Summary Judgement or Motion to Dismiss for Failure to       Properly Terminate Tenancy
 subquestion: |
  This is a form for a tenant's motion for summary judgement or a motion to         dismiss for failure to properly serve notice to terminate tenancy. 
  If your landlord is taking you to court to evict you and one of the following is true: 
@@ -205,7 +205,7 @@ subquestion:  |
   Write the landlord or plaintiff's name exactly the same way as it is
   written on your court paperwork.
   See Example Below. 
-  [FILE landlord_name.jpg, 100%]
+  [FILE landlord_name.jpg, 100%, The landlords name is at the end of the paragraph beginning You are hereby summonsed to appear at a hearing before a Judge of the Court.]
 fields:
   - code: |
       other_parties[0].name_fields(person_or_business='unsure')
@@ -242,7 +242,7 @@ subquestion:  |
   Write your other landlord's name exactly the same way as it is
   written on your court paperwork.
   See Example Below. 
-  [FILE landlord_name.jpg, 100%]
+  [FILE landlord_name.jpg, 100%, The landlords name is at the end of the paragraph beginning You are hereby summonsed to appear at a hearing before a Judge of the Court.]
 fields:
   - code: |
       other_parties[i].name_fields(person_or_business='unsure')
